@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 380" width="930" height="380" font-family="Nunito, Segoe UI, Arial, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3b4366"/></marker></defs>
+<rect width="930" height="380" rx="18" fill="#fbfaf6"/>
+<text x="30" y="40" font-size="19" font-weight="800" fill="#1d2340">Agent City - system architecture</text>
+<text x="30" y="62" font-size="13" fill="#59617f">Python engine + agents  ->  JSON API (server.py)  ->  browser: 2D canvas city, reasoning panel, charts</text>
+<rect x="30" y="90" width="190" height="96" rx="14" fill="#fff" stroke="#5b7cfa" stroke-width="2"/>
+<text x="125.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#5b7cfa">Scenario manager</text>
+<text x="125.0" y="136" text-anchor="middle" font-size="12" fill="#3b4366">3 situations (JSON)</text>
+<text x="125.0" y="153" text-anchor="middle" font-size="12" fill="#3b4366">random training situations</text>
+<rect x="30" y="230" width="190" height="96" rx="14" fill="#fff" stroke="#5b7cfa" stroke-width="2"/>
+<text x="125.0" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#5b7cfa">Road network graph</text>
+<text x="125.0" y="276" text-anchor="middle" font-size="12" fill="#3b4366">56 nodes, 80 edges</text>
+<text x="125.0" y="293" text-anchor="middle" font-size="12" fill="#3b4366">routes A-D = node paths</text>
+<rect x="270" y="90" width="190" height="96" rx="14" fill="#fff" stroke="#f78c1f" stroke-width="2"/>
+<text x="365.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#f78c1f">Traffic + weather sims</text>
+<text x="365.0" y="136" text-anchor="middle" font-size="12" fill="#3b4366">zone traffic, rain, flooding</text>
+<text x="365.0" y="153" text-anchor="middle" font-size="12" fill="#3b4366">noise, red lights, incidents</text>
+<rect x="270" y="230" width="190" height="96" rx="14" fill="#fff" stroke="#f78c1f" stroke-width="2"/>
+<text x="365.0" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#f78c1f">Route evaluation</text>
+<text x="365.0" y="276" text-anchor="middle" font-size="12" fill="#3b4366">edge-by-edge time,</text>
+<text x="365.0" y="293" text-anchor="middle" font-size="12" fill="#3b4366">cost, safety, risk</text>
+<rect x="510" y="160" width="190" height="96" rx="14" fill="#fff" stroke="#e0457b" stroke-width="2"/>
+<text x="605.0" y="184" text-anchor="middle" font-size="14" font-weight="700" fill="#e0457b">7 agents</text>
+<text x="605.0" y="206" text-anchor="middle" font-size="12" fill="#3b4366">perceive -&gt; decide</text>
+<text x="605.0" y="223" text-anchor="middle" font-size="12" fill="#3b4366">write their own trace</text>
+<rect x="720" y="90" width="190" height="96" rx="14" fill="#fff" stroke="#06a77d" stroke-width="2"/>
+<text x="815.0" y="114" text-anchor="middle" font-size="14" font-weight="700" fill="#06a77d">Delivery environment</text>
+<text x="815.0" y="136" text-anchor="middle" font-size="12" fill="#3b4366">executes route on graph</text>
+<text x="815.0" y="153" text-anchor="middle" font-size="12" fill="#3b4366">reward (same for all)</text>
+<rect x="720" y="230" width="190" height="96" rx="14" fill="#fff" stroke="#06a77d" stroke-width="2"/>
+<text x="815.0" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#06a77d">Runner + metrics</text>
+<text x="815.0" y="276" text-anchor="middle" font-size="12" fill="#3b4366">6-phase timeline</text>
+<text x="815.0" y="293" text-anchor="middle" font-size="12" fill="#3b4366">200-run evaluation</text>
+<line x1="220" y1="138" x2="268" y2="138" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="220" y1="278" x2="268" y2="278" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="365" y1="186" x2="365" y2="228" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="460" y1="278" x2="508" y2="220" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="460" y1="138" x2="508" y2="196" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="700" y1="208" x2="718" y2="150" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="815" y1="186" x2="815" y2="228" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<line x1="700" y1="220" x2="718" y2="270" stroke="#3b4366" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="465" y="350" text-anchor="middle" font-size="12" fill="#59617f">Browser asks /api/run -> receives the timeline the agent produced; nothing in the UI is precomputed or scripted.</text></svg>

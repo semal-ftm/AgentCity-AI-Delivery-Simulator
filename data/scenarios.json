@@ -1,0 +1,56 @@
+{
+  "_note": "ALL DATA IS SIMULATED. Orders, places, traffic and prices are fictional and were created for a university assignment.",
+  "situations": [
+    {
+      "id": 1,
+      "name": "Normal traffic + good weather",
+      "short": "Normal & clear",
+      "description": "Mid-afternoon. Every road has normal traffic, the sky is clear and the customer is not in a hurry.",
+      "clock": "14:00",
+      "time_of_day": "afternoon",
+      "night": false,
+      "weather": "clear",
+      "traffic": {"downtown": "normal", "ring": "normal", "oldtown": "normal", "expressway": "normal", "links": "normal", "midtown": "normal"},
+      "feeds": [
+        {"clock": "13:50", "minute": -10, "offline": []},
+        {"clock": "14:00", "minute": 0, "offline": []}
+      ],
+      "order": {"order_id": "ORD-1001", "restaurant": "Pizza Point", "customer": "Gulberg Residency, House 14",
+                "food": "pizza", "prep_min": 6, "deadline_min": 35, "urgent": false}
+    },
+    {
+      "id": 2,
+      "name": "Heavy traffic + multiple routes",
+      "short": "Rush hour",
+      "description": "18:00 rush hour. Downtown and the expressway are jammed, the old-town lanes are moving and the ring road was light ten minutes ago, but its sensor has just gone offline.",
+      "clock": "18:00",
+      "time_of_day": "rush hour",
+      "night": false,
+      "weather": "clear",
+      "traffic": {"downtown": "heavy", "ring": "light", "oldtown": "normal", "expressway": "heavy", "links": "normal", "midtown": "normal"},
+      "feeds": [
+        {"clock": "17:50", "minute": -10, "offline": []},
+        {"clock": "18:00", "minute": 0, "offline": ["B"]}
+      ],
+      "order": {"order_id": "ORD-1002", "restaurant": "Burger Barn", "customer": "Model Town Block C, House 7",
+                "food": "burger meal", "prep_min": 8, "deadline_min": 30, "urgent": false}
+    },
+    {
+      "id": 3,
+      "name": "Heavy traffic + rain + urgent delivery",
+      "short": "Storm & urgent",
+      "description": "21:30, heavy rain at night. Downtown is jammed, the old-town lanes are flooding and the customer needs the order urgently. The fast expressway is empty but slippery.",
+      "clock": "21:30",
+      "time_of_day": "night",
+      "night": true,
+      "weather": "rain",
+      "traffic": {"downtown": "heavy", "ring": "normal", "oldtown": "normal", "expressway": "light", "links": "normal", "midtown": "normal"},
+      "feeds": [
+        {"clock": "21:20", "minute": -10, "offline": [], "override": {"A": "normal"}},
+        {"clock": "21:30", "minute": 0, "offline": []}
+      ],
+      "order": {"order_id": "ORD-1003", "restaurant": "Soup House", "customer": "DHA Phase 5, House 22",
+                "food": "hot soup", "prep_min": 5, "deadline_min": 23, "urgent": true}
+    }
+  ]
+}

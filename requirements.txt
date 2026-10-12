@@ -1,0 +1,3 @@
+matplotlib>=3.7   # only for run_experiments.py (PNG charts for the report)
+pytest>=7.0       # tests
+python-docx>=1.0   # only for docs/make_word_report.py (Word version of the report)

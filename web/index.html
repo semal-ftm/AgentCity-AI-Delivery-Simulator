@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>try { document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light'; } catch (e) { document.documentElement.dataset.theme = 'light'; }</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent City</title>
+<meta name="description" content="Interactive 2D simulator showing how seven AI agent architectures choose a food-delivery route.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ffc233'/%3E%3Ccircle cx='20' cy='44' r='8' fill='%2314173a'/%3E%3Ccircle cx='46' cy='44' r='8' fill='%2314173a'/%3E%3Crect x='14' y='18' width='20' height='16' rx='3' fill='%23ef476f'/%3E%3Cpath d='M30 38h18l-6-14h-6' stroke='%2314173a' stroke-width='5' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="hud">
+  <div class="brand">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#ffc233"/><circle cx="20" cy="44" r="8" fill="#14173a"/><circle cx="46" cy="44" r="8" fill="#14173a"/><rect x="12" y="16" width="22" height="18" rx="4" fill="#ef476f"/><path d="M30 38h18l-6-14h-6" stroke="#14173a" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+    <div><b>Agent City</b><small>Smart Food Delivery · 7 AI agent architectures</small></div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-view="sim" class="on">🛵 Simulate</button>
+    <button data-view="compare">📊 Results &amp; comparison</button>
+    <button data-view="book">📐 Architecture diagrams</button>
+  </nav>
+  <button class="theme-btn" id="themeBtn" title="Switch between light and dark background"></button>
+</header>
+
+<main id="view-sim" class="view on">
+  <aside class="left">
+    <section class="box">
+      <h3><span class="n">1</span>Choose a situation</h3>
+      <div id="delPick" class="del-pick"></div>
+      <div id="sitList" class="sit-list"></div>
+    </section>
+    <section class="box">
+      <h3><span class="n">2</span>Choose an agent</h3>
+      <div id="agentList" class="agent-list"></div>
+    </section>
+    <section class="box">
+      <h3><span class="n">3</span>Mission control</h3>
+      <button class="btn go" id="btnStart">▶ Start simulation</button>
+      <div class="ctl-row">
+        <button class="btn" id="btnPause" title="Pause / resume (Space)">⏸ Pause</button>
+        <button class="btn" id="btnReset" title="Reset (R)">⟲ Reset</button>
+      </div>
+      <div class="ctl-row">
+        <button class="btn" id="btnPrev" title="Previous step (←)">⏮ Previous</button>
+        <button class="btn" id="btnNext" title="Next step (→)">Next ⏭</button>
+      </div>
+      <div class="ctl-row small">
+        <label>Speed <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+      </div>
+      <button class="btn compare" id="btnCompare">📊 Compare all agents</button>
+    </section>
+  </aside>
+
+  <section class="center">
+    <div class="sit-strip" id="sitBanner"></div>
+    <div class="mapwrap" id="mapwrap">
+      <canvas id="city" aria-label="City map with the delivery routes"></canvas>
+      <div class="map-top">
+        <div class="route-legend" id="routeLegend"></div>
+      </div>
+      <div class="map-bottom" id="mapBottom"></div>
+      <div class="map-intro" id="mapIntro"></div>
+      <div class="map-result" id="mapResult" hidden></div>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <aside class="right">
+    <div class="mind-head" id="mindHead"></div>
+    <div class="mind-tabs" id="mindTabs">
+      <button data-t="reason" class="on">🧠 Agent reasoning</button>
+      <button data-t="why">🧭 Why this route?<i id="whyDot" hidden></i></button>
+      <button data-t="rules">📜 Rules</button>
+      <button data-t="memory" id="memTabBtn" hidden>💾 Memory</button>
+    </div>
+    <div id="reasonPane">
+      <div class="phases" id="phases"></div>
+      <div class="stepcard" id="stepCard"></div>
+      <h4 class="log-title">Execution trace</h4>
+      <ol class="steplog" id="stepLog"></ol>
+    </div>
+    <div id="whyPane" class="why" hidden></div>
+    <div id="rulesPane" class="rulebook" hidden></div>
+    <div id="memoryPane" class="memory" hidden></div>
+  </aside>
+</main>
+
+<main id="view-compare" class="view page">
+  <div class="page-head">
+    <div><h1>Results &amp; comparison</h1><p>Outputs of all seven agents in the three required test situations: same road data, same evaluation rules and the same random seeds for every agent.</p></div>
+    <div class="seg" id="cmpTabs"></div>
+  </div>
+  <div class="cmp-grid">
+    <div class="card wide"><h2>Results for this test case <small id="cmpSub"></small></h2><div class="table-wrap"><table class="tbl big" id="cmpTable"></table></div><p class="hint">Means over 200 simulated runs of each decision. Click an agent to watch its simulation.</p></div>
+    <div class="card"><h2>Delivery time</h2><div id="chTime"></div></div>
+    <div class="card"><h2>Deadline success</h2><div id="chOnTime"></div></div>
+    <div class="card"><h2>Performance (mean reward)</h2><div id="chReward"></div></div>
+    <div class="card wide"><h2>Route chosen by each agent in each situation</h2><div class="table-wrap"><table class="tbl big matrix" id="matrix"></table></div></div>
+    <div class="card wide"><h2>Comparison: how the agents behaved differently</h2><div id="comparison" class="prose"></div></div>
+    <div class="card wide2"><h2>Conclusion: most suitable agent</h2><div id="conclusion" class="prose"></div></div>
+    <div class="card"><h2>Learning agent improves from feedback</h2><div id="chLearn"></div><p class="hint" id="learnNote"></p></div>
+  </div>
+</main>
+
+
+<main id="view-book" class="view page">
+  <div class="page-head"><div><h1>Architecture diagrams</h1><p>One diagram per agent: Input / Perception → Decision process → Action → Environment, plus the component of that architecture (rules, internal state, goal, utility, learning/feedback, subgoals, context).</p></div></div>
+  <div class="book" id="book"></div>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="vendor/three.min.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

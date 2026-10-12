@@ -1,0 +1,3340 @@
+{
+ "settings": {
+  "delivery": 1,
+  "episodes": 1500,
+  "seed": 42,
+  "alpha": "max(0.02, 1/n)",
+  "gamma": 0.0,
+  "eps_start": 1.0,
+  "eps_end": 0.05,
+  "mandatory_share": 0.5
+ },
+ "q": {
+  "rain|urgent|AL BH CN DL": {
+   "A": 0.0,
+   "B": -14.253327396795797,
+   "C": 0.0,
+   "D": -4.214116857864848
+  },
+  "clear|normal|AH BL CN DH": {
+   "A": -2.7725956247563905,
+   "B": 6.45581750314738,
+   "C": 3.7796643367381044,
+   "D": 5.329243302323447
+  },
+  "clear|urgent|AN BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.521417287314705,
+   "D": 0.0
+  },
+  "rain|urgent|AH BN CN DL": {
+   "A": -20.349051640241303,
+   "B": -10.565490384720809,
+   "C": -26.156527863652126,
+   "D": -1.1511325464771265
+  },
+  "clear|normal|AN BN CN DN": {
+   "A": 5.529528428060235,
+   "B": 6.089556973752259,
+   "C": 5.388867713612955,
+   "D": 5.689425559304447
+  },
+  "rain|normal|AL BL CL DH": {
+   "A": 0.0,
+   "B": 1.8960051259175388,
+   "C": -27.200111001712813,
+   "D": -17.494421650762064
+  },
+  "clear|urgent|AL BL CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.875558417866982
+  },
+  "clear|urgent|AN BL CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.1774133645625975
+  },
+  "clear|normal|AN BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -0.8435413362691366
+  },
+  "clear|urgent|AH BN CH DL": {
+   "A": 0.0,
+   "B": 6.903508381720642,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CN DL": {
+   "A": 0.0,
+   "B": -14.63135029108659,
+   "C": -15.357991186094178,
+   "D": 2.904943519215842
+  },
+  "clear|normal|AN BN CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -15.93854682071081,
+   "D": 5.718909161058128
+  },
+  "rain|normal|AH BN CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.346735618646484
+  },
+  "clear|normal|AN BH CN DN": {
+   "A": 5.928528526287673,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.0186980806839125
+  },
+  "clear|normal|AN BL CN DN": {
+   "A": 0.0,
+   "B": 0.9162096851189165,
+   "C": 5.353393927947668,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CL DH": {
+   "A": 0.0,
+   "B": -16.186027083825465,
+   "C": 0.0,
+   "D": -11.015015992774984
+  },
+  "clear|urgent|AN BN CN DN": {
+   "A": 6.24056861813393,
+   "B": 6.83756538444943,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -3.2120454626053103
+  },
+  "rain|normal|AH BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.31026186784604803
+  },
+  "rain|normal|AN BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -20.019422056415536,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.384302732965967,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.367512733766426
+  },
+  "clear|normal|AL BL CL DH": {
+   "A": 6.079838505354612,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BL CH DL": {
+   "A": 0.0,
+   "B": 6.988889540650487,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CH DL": {
+   "A": -0.49461479183199675,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.419489995394282,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CL DN": {
+   "A": 0.0,
+   "B": 0.03875609281663106,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CN DN": {
+   "A": -16.504315298667603,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CL DH": {
+   "A": 5.1331358731118595,
+   "B": 0.0,
+   "C": 5.319267740751021,
+   "D": 0.0
+  },
+  "clear|urgent|AH BH CH DN": {
+   "A": -9.679122374524171,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BL CN DL": {
+   "A": 6.147093167735884,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.876420385205405
+  },
+  "rain|normal|AN BH CN DH": {
+   "A": -3.4469884169879923,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -12.572351092728367
+  },
+  "clear|urgent|AL BL CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.3974057789154966,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 2.7936444789651973,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CL DL": {
+   "A": 0.0,
+   "B": 6.741188624367805,
+   "C": 0.0,
+   "D": 6.391547583961021
+  },
+  "rain|urgent|AN BL CH DH": {
+   "A": 0.0,
+   "B": 0.013585899144133329,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -34.014534209636295,
+   "D": 0.0
+  },
+  "rain|normal|AH BH CL DH": {
+   "A": 0.0,
+   "B": -23.813877753658833,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CN DH": {
+   "A": 0.0,
+   "B": 7.04127524455905,
+   "C": 0.0,
+   "D": 5.625270292958614
+  },
+  "clear|urgent|AL BN CN DH": {
+   "A": 0.0,
+   "B": -8.62868426937896,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CH DL": {
+   "A": 0.0,
+   "B": 5.549267650814166,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CH DL": {
+   "A": 5.9398712908347795,
+   "B": 0.0,
+   "C": -30.289287805706373,
+   "D": 0.0
+  },
+  "rain|normal|AN BL CH DH": {
+   "A": 4.617299486625087,
+   "B": 0.0,
+   "C": -27.64706521965464,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CL DL": {
+   "A": 6.2772565467599275,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CH DL": {
+   "A": 6.053312903034159,
+   "B": 0.0,
+   "C": -12.153158874153727,
+   "D": 0.0
+  },
+  "clear|normal|AH BH CL DH": {
+   "A": 0.0,
+   "B": -2.744474081781801,
+   "C": 5.524159984651988,
+   "D": 0.0
+  },
+  "rain|normal|AL BL CH DL": {
+   "A": 1.3718929807372116,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CN DN": {
+   "A": 0.0,
+   "B": 3.124375884288259,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CH DH": {
+   "A": 0.0,
+   "B": -2.165906400767553,
+   "C": 0.0,
+   "D": 1.6461220417958686
+  },
+  "clear|urgent|AH BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.2360297629079895,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.502171250325789,
+   "D": 6.379329685612454
+  },
+  "clear|normal|AL BH CN DH": {
+   "A": 0.0,
+   "B": -3.6481961610897056,
+   "C": 0.0,
+   "D": 5.38738209866253
+  },
+  "clear|normal|AL BN CN DL": {
+   "A": 0.0,
+   "B": 6.6469618573461045,
+   "C": 5.404345151728018,
+   "D": 0.2903611763247058
+  },
+  "clear|normal|AH BH CL DN": {
+   "A": -9.850392315685905,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.351429266233847
+  },
+  "clear|normal|AL BH CH DL": {
+   "A": 5.776842911617953,
+   "B": -9.118079938356216,
+   "C": 0.0,
+   "D": 3.6089507135165357
+  },
+  "clear|urgent|AL BL CN DL": {
+   "A": 0.0,
+   "B": 6.972911485849313,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CH DH": {
+   "A": -10.023103535411977,
+   "B": 0.0,
+   "C": -7.543426765708847,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CN DN": {
+   "A": 5.812440224081781,
+   "B": 0.0,
+   "C": 5.177725705308021,
+   "D": 0.0
+  },
+  "rain|urgent|AN BL CN DN": {
+   "A": 4.558604187192318,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -14.250999308009476,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CN DN": {
+   "A": 4.425785921576919,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BH CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 4.093856186643179
+  },
+  "rain|normal|AH BH CN DH": {
+   "A": -23.649882841996938,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -6.0066828278014635
+  },
+  "rain|normal|AL BN CL DN": {
+   "A": 0.0,
+   "B": 5.555656693300741,
+   "C": 0.0,
+   "D": -12.302407769816112
+  },
+  "clear|normal|AH BH CH DN": {
+   "A": -0.9829079454800409,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.5809564058985135,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CH DH": {
+   "A": -3.6898640328427437,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.829852291387983
+  },
+  "rain|urgent|AL BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -15.47149874118638,
+   "D": 0.0
+  },
+  "clear|urgent|AL BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 1.0190043198788867,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.467430384172054,
+   "D": 6.256414114786425
+  },
+  "rain|normal|AN BL CL DN": {
+   "A": 0.0,
+   "B": -0.41076910442585124,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CH DN": {
+   "A": 1.9867408595713023,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -7.375092375138641,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -5.215439937000832,
+   "D": 0.0
+  },
+  "rain|normal|AH BH CH DN": {
+   "A": -11.891300407519756,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CN DN": {
+   "A": -9.424512565479386,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -18.324722986241042,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CN DN": {
+   "A": 5.813487416130549,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CH DN": {
+   "A": 0.0,
+   "B": -1.8682602528371879,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 1.046747834980227,
+   "D": 0.0
+  },
+  "rain|urgent|AH BL CH DH": {
+   "A": -18.453553313428948,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -15.284431355042228
+  },
+  "rain|normal|AH BH CL DL": {
+   "A": -13.073121127264224,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CL DN": {
+   "A": 5.856499708358903,
+   "B": 6.64303983301193,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CN DN": {
+   "A": 6.094768493647324,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.3376075685031905
+  },
+  "clear|normal|AN BH CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -5.260381370693979,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.561045965784274,
+   "D": 6.094609145926149
+  },
+  "rain|urgent|AH BL CN DL": {
+   "A": 3.2883804838711495,
+   "B": 5.145864675287731,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -0.22800255352673648,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CL DN": {
+   "A": 0.0,
+   "B": -3.387877074802031,
+   "C": 0.0,
+   "D": -24.024001678060145
+  },
+  "clear|normal|AH BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 2.737469468841526,
+   "D": 0.0
+  },
+  "rain|urgent|AN BH CH DN": {
+   "A": 0.0,
+   "B": -23.897275079986002,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CL DL": {
+   "A": 4.684139121610046,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.274555515802236
+  },
+  "rain|normal|AL BH CH DL": {
+   "A": 4.537876669708902,
+   "B": 0.0,
+   "C": -48.91931624743878,
+   "D": 0.0
+  },
+  "clear|normal|AH BL CN DL": {
+   "A": -6.755070655168472,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BL CN DL": {
+   "A": 0.0,
+   "B": 5.157259827370117,
+   "C": -19.980383830115965,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CN DH": {
+   "A": 0.0,
+   "B": 0.4246703491175481,
+   "C": 5.330579498872594,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CL DH": {
+   "A": 0.0,
+   "B": 1.3756250232374012,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CL DN": {
+   "A": 0.0,
+   "B": -13.294603056989617,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.202413844014252
+  },
+  "rain|normal|AL BN CH DL": {
+   "A": 0.0,
+   "B": 5.582214923283553,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CL DN": {
+   "A": 0.0,
+   "B": -6.4506360891277215,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CL DH": {
+   "A": 6.180166207027178,
+   "B": 5.603299842324306,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -12.12474604230973
+  },
+  "rain|normal|AN BH CH DH": {
+   "A": 0.0,
+   "B": -17.547671030341096,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BH CN DH": {
+   "A": -15.004445520476002,
+   "B": 5.942917635253344,
+   "C": 0.0,
+   "D": -7.799554530976589
+  },
+  "rain|normal|AL BL CN DN": {
+   "A": 0.0,
+   "B": 5.444994465623506,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.297900940264421
+  },
+  "rain|normal|AN BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -4.323832751994227
+  },
+  "clear|normal|AH BN CH DH": {
+   "A": -0.8223504176860739,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CL DL": {
+   "A": 0.0,
+   "B": 6.597057167674745,
+   "C": 5.516018535878381,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -0.3471582619535326
+  },
+  "rain|normal|AH BL CL DL": {
+   "A": -9.690051995758951,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CH DL": {
+   "A": 0.0,
+   "B": -5.566903616289484,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CH DN": {
+   "A": 0.0,
+   "B": -2.5456268091012726,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -2.405948847817121
+  },
+  "clear|urgent|AN BH CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.44231340844234
+  },
+  "clear|urgent|AN BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -2.308017950536157,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CH DH": {
+   "A": 6.102720214065593,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BN CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4.888994076772273,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CN DH": {
+   "A": 6.196414118217368,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AN BH CH DH": {
+   "A": 0.0,
+   "B": -17.404799561561795,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BH CH DL": {
+   "A": 4.989715256034047,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 4.188145076026779
+  },
+  "rain|normal|AH BL CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -4.972923400849508
+  },
+  "rain|normal|AL BL CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -15.722258171809296
+  },
+  "rain|urgent|AH BH CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -35.88198285576837,
+   "D": 0.0
+  },
+  "rain|urgent|AH BH CN DL": {
+   "A": -21.68907274717506,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CH DL": {
+   "A": 4.614011262118079,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CH DH": {
+   "A": 0.0,
+   "B": -1.1637928962288298,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.637165764959747
+  },
+  "clear|urgent|AH BN CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.375034454717916,
+   "D": 0.0
+  },
+  "rain|urgent|AN BH CL DH": {
+   "A": 4.617403588092001,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CL DN": {
+   "A": 6.02886750358289,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BN CH DH": {
+   "A": 6.173756897760346,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -13.969995769335277
+  },
+  "rain|urgent|AL BN CH DL": {
+   "A": 0.0,
+   "B": 5.583884944209503,
+   "C": 0.0,
+   "D": 2.8050366429630786
+  },
+  "clear|urgent|AN BL CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.399292271954655,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -7.589056567552736,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 1.2606606703984198,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CH DL": {
+   "A": 0.0,
+   "B": 6.05868916016327,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CN DN": {
+   "A": 4.630978459807223,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -15.252788710149336,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CH DH": {
+   "A": 6.312579691058835,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BH CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -8.328054341768977,
+   "D": 0.0
+  },
+  "rain|normal|AH BL CH DH": {
+   "A": 0.0,
+   "B": 5.634739896435553,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BL CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.355836276758639
+  },
+  "clear|urgent|AH BH CH DH": {
+   "A": -10.939086481318668,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CN DL": {
+   "A": -10.356972282518761,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BH CN DL": {
+   "A": 4.958656801038522,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AL BH CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -46.47682717400211,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.370146111997289,
+   "D": 0.0
+  },
+  "rain|normal|AL BN CH DH": {
+   "A": 4.823188358467697,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AN BH CL DN": {
+   "A": 4.740494297490758,
+   "B": 0.0,
+   "C": -14.509561935355897,
+   "D": 0.0
+  },
+  "rain|urgent|AN BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 2.6906361378657353
+  },
+  "rain|urgent|AL BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -30.42793564124816
+  },
+  "rain|urgent|AL BL CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -2.8475977894381383
+  },
+  "rain|urgent|AH BL CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -31.622310005601207,
+   "D": 0.0
+  },
+  "clear|urgent|AN BL CN DN": {
+   "A": 5.977474809845431,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CL DL": {
+   "A": 0.0,
+   "B": 6.887322308542477,
+   "C": 5.526888171323048,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -7.146250439406108,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CN DN": {
+   "A": -5.929261220185204,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BH CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.520051848350935,
+   "D": 0.0
+  },
+  "clear|urgent|AN BL CL DN": {
+   "A": 0.0,
+   "B": -8.590010513399053,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -47.18544550101051,
+   "D": 0.0
+  },
+  "rain|normal|AN BL CN DL": {
+   "A": -5.124716613642472,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CL DL": {
+   "A": 6.212793787734424,
+   "B": 6.853239337326578,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 1.0496468134567358,
+   "D": 0.0
+  },
+  "rain|normal|AL BL CL DL": {
+   "A": -3.929255585722424,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CN DH": {
+   "A": -7.901859194109958,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -5.410747796224362
+  },
+  "clear|urgent|AN BN CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.312274490633816
+  },
+  "rain|normal|AL BL CL DN": {
+   "A": 0.0,
+   "B": -0.9564166454893019,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.65527438288832
+  },
+  "clear|normal|AH BL CH DN": {
+   "A": 0.0,
+   "B": 6.940857697140864,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -15.726135758560114,
+   "D": 0.0
+  },
+  "rain|normal|AH BH CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -42.79266427924324,
+   "D": 0.0
+  },
+  "clear|normal|AN BH CL DH": {
+   "A": 0.0,
+   "B": 5.59965787671965,
+   "C": 5.531904258151057,
+   "D": 0.0
+  },
+  "rain|urgent|AN BN CL DL": {
+   "A": 0.0,
+   "B": -4.504090037867508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AL BN CH DH": {
+   "A": 4.753330997959244,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BH CH DL": {
+   "A": 6.384697978400836,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CH DL": {
+   "A": -11.147398381833874,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AL BN CN DN": {
+   "A": 0.0,
+   "B": 5.309683759719619,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.753077748480366
+  },
+  "clear|normal|AL BN CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -12.488445691862426,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -6.777609523096585
+  },
+  "rain|normal|AN BL CL DL": {
+   "A": 0.0,
+   "B": 5.637836736102142,
+   "C": -14.962998408305264,
+   "D": 0.0
+  },
+  "rain|urgent|AL BN CL DH": {
+   "A": 4.308159422995651,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BH CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -45.7778995324033,
+   "D": -9.665529872796451
+  },
+  "rain|normal|AH BN CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -10.67189003256023
+  },
+  "rain|urgent|AN BH CN DN": {
+   "A": -9.915897538473006,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CN DL": {
+   "A": 0.0,
+   "B": -6.580403305350638,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.715246690251485
+  },
+  "rain|urgent|AH BL CN DN": {
+   "A": 0.0,
+   "B": -0.11483798555285674,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -16.25593614858371
+  },
+  "clear|urgent|AL BL CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -19.15552377927842,
+   "D": 0.0
+  },
+  "rain|normal|AL BN CN DH": {
+   "A": 0.0,
+   "B": -1.1248136607349908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CH DN": {
+   "A": 6.156689369424282,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BN CH DL": {
+   "A": -3.249637348380695,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -16.161082542493837,
+   "D": 0.0
+  },
+  "clear|normal|AH BN CL DN": {
+   "A": 0.0,
+   "B": 6.799005186598582,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BH CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -2.571589040351446
+  },
+  "rain|urgent|AL BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.181201963975284
+  },
+  "rain|normal|AN BL CH DN": {
+   "A": 0.0,
+   "B": -0.48485007127907664,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BL CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.3081857925105185
+  },
+  "clear|normal|AL BH CL DN": {
+   "A": 6.009853085307936,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.640763942251518
+  },
+  "clear|urgent|AL BL CL DN": {
+   "A": 6.328504503646257,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -6.111957575529637
+  },
+  "clear|urgent|AL BH CN DL": {
+   "A": 0.0,
+   "B": -12.94521785743968,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BN CL DN": {
+   "A": 0.0,
+   "B": -8.050213519261254,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AL BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -4.333305963945208
+  },
+  "rain|normal|AL BH CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -11.161187464467654,
+   "D": 0.0
+  },
+  "clear|urgent|AN BN CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -4.059778263842385,
+   "D": 0.0
+  },
+  "rain|urgent|AH BL CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -22.900367353516103,
+   "D": 0.0
+  },
+  "rain|normal|AH BH CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 2.8781612664680374
+  },
+  "rain|normal|AL BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -1.1310210942630128
+  },
+  "clear|urgent|AN BN CL DH": {
+   "A": 5.6618062438356205,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BN CN DL": {
+   "A": 0.0,
+   "B": -0.6895549794090288,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.516267601920973,
+   "D": 0.0
+  },
+  "rain|normal|AH BL CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -10.260001833389424
+  },
+  "rain|normal|AH BL CL DN": {
+   "A": 0.0,
+   "B": 2.413913537865655,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -0.6907836931024387,
+   "D": 0.0
+  },
+  "rain|urgent|AN BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -3.823610904497352
+  },
+  "rain|urgent|AH BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 2.738521567909509
+  },
+  "clear|urgent|AH BH CN DL": {
+   "A": -3.3895364417276355,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AN BL CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -16.155121127724932,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -12.87442018046257,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.423152605885089
+  },
+  "clear|normal|AH BH CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.015219141656013
+  },
+  "clear|urgent|AH BL CH DN": {
+   "A": -17.596250195102677,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AN BN CL DN": {
+   "A": 0.0,
+   "B": 6.623267432387292,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AN BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.329699297446565
+  },
+  "clear|normal|AL BL CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.360069880000932
+  },
+  "clear|normal|AN BL CN DL": {
+   "A": 0.0,
+   "B": 6.892019538842879,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BL CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -34.973026177273226,
+   "D": 0.0
+  },
+  "clear|normal|AL BH CL DL": {
+   "A": 6.256082989472553,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4.385648260550074,
+   "D": 0.0
+  },
+  "clear|urgent|AL BH CH DH": {
+   "A": 6.36873309560531,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BL CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -22.14154630572101,
+   "D": 0.0
+  },
+  "rain|urgent|AL BL CL DN": {
+   "A": 0.0,
+   "B": 5.581591282893358,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BH CL DH": {
+   "A": 0.0,
+   "B": -12.085393302611674,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AH BN CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -28.309128264895502,
+   "D": 0.0
+  },
+  "rain|urgent|AL BN CL DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -15.99444827737143,
+   "D": 0.0
+  },
+  "clear|urgent|AL BH CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -3.8136152149833182,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -16.94134756778135
+  },
+  "rain|urgent|AH BN CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -49.25275591382657,
+   "D": 0.0
+  },
+  "clear|normal|AN BL CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -9.673637331394028,
+   "D": 0.0
+  },
+  "clear|urgent|AN BH CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.052461110583277
+  },
+  "rain|normal|AN BN CH DH": {
+   "A": 0.0,
+   "B": -7.803473161823186,
+   "C": -34.9692755408289,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CN DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 5.1870262117795125,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CL DL": {
+   "A": 0.0,
+   "B": 6.864282415895148,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.487643727123311
+  },
+  "rain|urgent|AL BH CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -21.926702032430455,
+   "D": 0.0
+  },
+  "rain|urgent|AH BH CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -7.246711978920688
+  },
+  "rain|normal|AH BH CH DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -43.00036084754694,
+   "D": 0.0
+  },
+  "rain|urgent|AN BL CL DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 2.802988150329538
+  },
+  "clear|normal|AL BN CN DH": {
+   "A": 6.310139016893849,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AN BN CN DN": {
+   "A": 4.551233675490118,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -11.212651965558038,
+   "D": 0.0
+  },
+  "rain|normal|AH BL CN DH": {
+   "A": 0.0,
+   "B": 5.24845665064101,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|normal|AL BL CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.263611856743377
+  },
+  "rain|normal|AH BL CL DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -5.448448657452494
+  },
+  "clear|urgent|AL BH CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 6.3936640952571535
+  },
+  "rain|urgent|AL BL CH DN": {
+   "A": 0.0,
+   "B": -6.90366355568346,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BN CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.304195927739167
+  },
+  "rain|urgent|AN BN CN DL": {
+   "A": -11.874667777180822,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BH CN DH": {
+   "A": -15.825606271312093,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AN BN CN DL": {
+   "A": -7.7753019318544565,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AL BL CH DH": {
+   "A": 0.0,
+   "B": 5.703974232244123,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AN BH CN DL": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 2.7954694832788256
+  },
+  "rain|normal|AL BH CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": -10.692351146570598,
+   "D": 0.0
+  },
+  "rain|urgent|AH BH CH DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": -4.131219598780593
+  },
+  "rain|normal|AL BN CN DN": {
+   "A": 0.0,
+   "B": 5.547555449571989,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|urgent|AL BL CL DL": {
+   "A": 0.0,
+   "B": 5.633022494248603,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AL BL CN DH": {
+   "A": 5.865519849781462,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "rain|normal|AH BL CH DN": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 3.2726020262985602
+  },
+  "rain|urgent|AN BN CL DH": {
+   "A": 4.579505796510062,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "clear|urgent|AH BL CN DH": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 5.787403318720274
+  },
+  "rain|urgent|AN BN CL DN": {
+   "A": 0.0,
+   "B": -12.43123915852441,
+   "C": 0.0,
+   "D": 0.0
+  }
+ },
+ "n": {
+  "rain|urgent|AL BH CN DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 2
+  },
+  "clear|normal|AH BL CN DH": {
+   "A": 24,
+   "B": 212,
+   "C": 22,
+   "D": 23
+  },
+  "clear|urgent|AN BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AH BN CN DL": {
+   "A": 18,
+   "B": 14,
+   "C": 20,
+   "D": 193
+  },
+  "clear|normal|AN BN CN DN": {
+   "A": 19,
+   "B": 93,
+   "C": 26,
+   "D": 113
+  },
+  "rain|normal|AL BL CL DH": {
+   "A": 0,
+   "B": 3,
+   "C": 1,
+   "D": 2
+  },
+  "clear|urgent|AL BL CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AN BL CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|normal|AN BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 4
+  },
+  "clear|urgent|AH BN CH DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CN DL": {
+   "A": 0,
+   "B": 2,
+   "C": 1,
+   "D": 1
+  },
+  "clear|normal|AN BN CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 5
+  },
+  "rain|normal|AH BN CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|normal|AN BH CN DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|normal|AN BL CN DN": {
+   "A": 0,
+   "B": 4,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AN BH CL DH": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AN BN CN DN": {
+   "A": 1,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AH BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 4
+  },
+  "rain|normal|AN BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|urgent|AL BN CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AN BH CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AL BL CL DH": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BL CH DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BL CH DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BH CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|urgent|AN BH CL DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BL CN DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BL CL DH": {
+   "A": 1,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|urgent|AH BH CH DN": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BL CN DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AN BH CN DH": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|urgent|AL BL CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AL BH CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 5,
+   "D": 0
+  },
+  "clear|normal|AH BL CL DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AN BL CH DH": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "rain|normal|AH BH CL DH": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BL CN DH": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 2
+  },
+  "clear|urgent|AL BN CN DH": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BN CH DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CH DL": {
+   "A": 3,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AN BL CH DH": {
+   "A": 2,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AL BL CL DL": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BL CH DL": {
+   "A": 7,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AH BH CL DH": {
+   "A": 0,
+   "B": 2,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AL BL CH DL": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BL CN DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BH CH DH": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 3
+  },
+  "clear|urgent|AH BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AH BL CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 2
+  },
+  "clear|normal|AL BH CN DH": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AL BN CN DL": {
+   "A": 0,
+   "B": 3,
+   "C": 1,
+   "D": 2
+  },
+  "clear|normal|AH BH CL DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|normal|AL BH CH DL": {
+   "A": 1,
+   "B": 1,
+   "C": 0,
+   "D": 4
+  },
+  "clear|urgent|AL BL CN DL": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BL CH DH": {
+   "A": 1,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|urgent|AL BN CN DN": {
+   "A": 1,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "rain|urgent|AN BL CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BL CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AN BN CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BH CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 7
+  },
+  "rain|normal|AH BH CN DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AL BN CL DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AH BH CH DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AH BL CH DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|urgent|AL BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|urgent|AL BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 4
+  },
+  "rain|normal|AN BL CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BH CH DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AL BN CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 5,
+   "D": 0
+  },
+  "rain|normal|AH BH CH DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BN CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AL BH CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BH CH DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|urgent|AH BL CH DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AH BH CL DL": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BN CL DN": {
+   "A": 1,
+   "B": 5,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BL CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|normal|AN BH CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|normal|AN BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 5
+  },
+  "rain|urgent|AH BL CN DL": {
+   "A": 1,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 5,
+   "D": 0
+  },
+  "rain|normal|AN BN CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AH BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 5,
+   "D": 0
+  },
+  "rain|urgent|AN BH CH DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CL DL": {
+   "A": 5,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AL BH CH DL": {
+   "A": 2,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AH BL CN DL": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BL CN DL": {
+   "A": 0,
+   "B": 1,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AH BN CN DH": {
+   "A": 0,
+   "B": 2,
+   "C": 4,
+   "D": 0
+  },
+  "rain|normal|AH BN CL DH": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BH CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AL BN CH DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BH CL DH": {
+   "A": 1,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AN BH CH DH": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BH CN DH": {
+   "A": 1,
+   "B": 2,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AL BL CN DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AN BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|normal|AH BN CH DH": {
+   "A": 5,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CL DL": {
+   "A": 0,
+   "B": 2,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AH BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 6
+  },
+  "rain|normal|AH BL CL DL": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BN CH DL": {
+   "A": 0,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BN CH DN": {
+   "A": 0,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|urgent|AN BH CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AN BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AL BN CH DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BN CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AN BH CN DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AN BH CH DH": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BH CH DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BH CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 6
+  },
+  "rain|normal|AH BL CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|normal|AL BL CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AH BH CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "rain|urgent|AH BH CN DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BH CH DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BN CH DH": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 4
+  },
+  "clear|urgent|AH BN CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AN BH CL DH": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BL CL DN": {
+   "A": 6,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BN CH DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BN CH DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AN BL CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|normal|AN BL CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|normal|AN BH CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 5,
+   "D": 0
+  },
+  "clear|normal|AN BH CH DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CN DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|normal|AL BL CH DH": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BH CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AH BL CH DH": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BL CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AH BH CH DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BN CN DL": {
+   "A": 5,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BH CN DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AL BH CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|normal|AH BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AL BN CH DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AN BH CL DN": {
+   "A": 2,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AN BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BL CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AH BL CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AN BL CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BN CL DL": {
+   "A": 0,
+   "B": 1,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AN BL CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|normal|AH BN CN DN": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BH CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AN BL CL DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AN BL CN DL": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BL CL DL": {
+   "A": 1,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AL BL CL DL": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BN CN DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|urgent|AN BN CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AL BL CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 5
+  },
+  "clear|normal|AH BL CH DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BH CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AH BH CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AN BH CL DH": {
+   "A": 0,
+   "B": 2,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AN BN CL DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AL BN CH DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BH CH DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AH BN CH DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AL BN CN DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AL BN CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AH BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|normal|AN BL CL DL": {
+   "A": 0,
+   "B": 2,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AL BN CL DH": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BH CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 1
+  },
+  "rain|normal|AH BN CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|urgent|AN BH CN DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BH CN DL": {
+   "A": 0,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BN CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|urgent|AH BL CN DN": {
+   "A": 0,
+   "B": 3,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AL BL CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AL BN CN DH": {
+   "A": 0,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BL CH DN": {
+   "A": 4,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BN CH DL": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|normal|AH BN CL DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BH CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AL BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AN BL CH DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BL CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|normal|AL BH CL DN": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|urgent|AL BL CL DN": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AL BH CN DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BN CL DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AL BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AL BH CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|urgent|AN BN CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|urgent|AH BL CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|normal|AH BH CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AL BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|urgent|AN BN CL DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BN CN DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BN CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "rain|normal|AH BL CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AH BL CL DN": {
+   "A": 0,
+   "B": 4,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BH CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|urgent|AN BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AH BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|urgent|AH BH CN DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AN BL CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AN BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "clear|urgent|AH BL CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AH BH CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 4
+  },
+  "clear|urgent|AH BL CH DN": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AN BN CL DN": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AN BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "clear|normal|AL BL CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|normal|AN BL CN DL": {
+   "A": 0,
+   "B": 2,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BL CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|normal|AL BH CL DL": {
+   "A": 2,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AL BH CH DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BL CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AL BL CL DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BH CL DH": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AH BN CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AL BN CL DL": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AL BH CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 3,
+   "D": 0
+  },
+  "rain|normal|AN BN CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|urgent|AH BN CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "clear|normal|AN BL CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 4,
+   "D": 0
+  },
+  "clear|urgent|AN BH CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AN BN CH DH": {
+   "A": 0,
+   "B": 1,
+   "C": 1,
+   "D": 0
+  },
+  "clear|urgent|AH BN CN DN": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "clear|urgent|AH BN CL DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BH CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 1,
+   "D": 0
+  },
+  "rain|urgent|AH BH CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|normal|AH BH CH DL": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "rain|urgent|AN BL CL DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "clear|normal|AL BN CN DH": {
+   "A": 3,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AN BN CN DN": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "rain|normal|AH BL CN DH": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|normal|AL BL CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 4
+  },
+  "rain|normal|AH BL CL DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "clear|urgent|AL BH CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AL BL CH DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BN CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AN BN CN DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BH CN DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AN BN CN DL": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AL BL CH DH": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AN BH CN DL": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|normal|AL BH CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 2,
+   "D": 0
+  },
+  "rain|urgent|AH BH CH DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 3
+  },
+  "rain|normal|AL BN CN DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "rain|urgent|AL BL CL DL": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AL BL CN DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "rain|normal|AH BL CH DN": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 2
+  },
+  "rain|urgent|AN BN CL DH": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "clear|urgent|AH BL CN DH": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 1
+  },
+  "rain|urgent|AN BN CL DN": {
+   "A": 0,
+   "B": 1,
+   "C": 0,
+   "D": 0
+  }
+ }
+}
